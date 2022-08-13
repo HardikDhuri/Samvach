@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Samvach by Sakshi (Login) Apple"
+        android:text="Samvach by Sakshi (Login) Apple Banana"
         android:id="@+id/textview1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
