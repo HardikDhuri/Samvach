@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
             auth.signOut()
             redirectToLogin()
         }
-
     }
 
     private fun redirectToLogin() {
