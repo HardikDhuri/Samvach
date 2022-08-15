@@ -5,4 +5,9 @@
     <string name="notifications_tab_text">Notifications</string>
     <string name="community_tab_text">Community</string>
     <string name="chats_tab_text">Chats</string>
+    <string name="menu_settings_text">Settings</string>
+    <string name="menu_new_group_text">New group</string>
+    <string name="menu_verified_send_menu">Verified send</string>
+    <string name="hidden_chats_text">Hidden chats</string>
+    <string name="menu_search_text">Search</string>
 </resources>

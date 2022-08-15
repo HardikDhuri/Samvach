@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_menu"
+        android:title="@string/menu_search_text"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/hidden_chats_menu"
+        android:title="@string/hidden_chats_text"
+        android:icon="@drawable/ic_baseline_lock_24"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/verified_send_menu"
+        android:icon="@drawable/ic_baseline_security_24"
+        android:title="@string/menu_verified_send_menu"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/new_group_menu"
+        android:icon="@drawable/ic_baseline_group_24"
+        android:title="@string/menu_new_group_text"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/settings_menu"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/menu_settings_text"
+        app:showAsAction="never"/>
+</menu>

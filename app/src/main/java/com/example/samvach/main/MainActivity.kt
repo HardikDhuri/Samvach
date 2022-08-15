@@ -4,6 +4,7 @@ package com.example.samvach.main
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.viewpager.widget.ViewPager
 import com.example.samvach.R
 import com.example.samvach.databinding.ActivityMainBinding
@@ -26,6 +27,11 @@ class MainActivity : AppCompatActivity() {
 
         tabLayout.setupWithViewPager(viewPager)
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
     private fun redirectToLogin() {
