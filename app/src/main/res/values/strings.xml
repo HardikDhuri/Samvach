@@ -2,4 +2,7 @@
     <string name="app_name">Samvach</string>
     <string name="web_client_id">459397568313-sp0d0694ludkrm0iiosq0s9v8pisia5l.apps.googleusercontent.com</string>
     <string name="log_out">Log Out</string>
+    <string name="notifications_tab_text">Notifications</string>
+    <string name="community_tab_text">Community</string>
+    <string name="chats_tab_text">Chats</string>
 </resources>
