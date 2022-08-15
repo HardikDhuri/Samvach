@@ -12,6 +12,7 @@
         android:title="@string/hidden_chats_text"
         android:icon="@drawable/ic_baseline_lock_24"
         app:showAsAction="never"/>
+
     <item
         android:id="@+id/verified_send_menu"
         android:icon="@drawable/ic_baseline_security_24"
