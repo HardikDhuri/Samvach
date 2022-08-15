@@ -12,19 +12,16 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/chats_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/chats_tab_text" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/community_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/community_tab_text" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/notification_tab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/notifications_tab_text" />

@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "459397568313-d47ttlv5lidlu75ddj1aucvdqv8l3mfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samvach",
+            "certificate_hash": "9aba643cb29ecfe11a3ceb69cd185a7d19cb3954"
+          }
+        },
+        {
           "client_id": "459397568313-sp0d0694ludkrm0iiosq0s9v8pisia5l.apps.googleusercontent.com",
           "client_type": 3
         }
