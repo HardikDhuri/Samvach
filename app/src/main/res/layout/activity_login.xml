@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_height="match_parent"
     tools:context=".login.LoginActivity">
 
@@ -11,17 +13,13 @@
         android:id="@+id/logo_img"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
         android:src="@drawable/samvach" />
 
     <TextView
         android:id="@+id/login_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logo_img"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
         android:text="Login"
         android:textAlignment="center"
@@ -33,13 +31,11 @@
         android:id="@+id/contact_input"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="40dp"
-        android:layout_below="@+id/login_tv"
         android:layout_marginTop="40dp"
         app:boxCornerRadiusBottomEnd="5dp"
         app:boxCornerRadiusBottomStart="5dp"
         app:boxCornerRadiusTopEnd="5dp"
         app:boxCornerRadiusTopStart="5dp"
-        android:elevation="10dp"
         android:layout_height="50dp"
         style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
 
@@ -48,52 +44,60 @@
             android:layout_height="match_parent"
             android:id="@+id/contact_edt"
             android:inputType="phone"
-            android:hint="Number" />
+            android:hint="@string/number" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/login"
         android:id="@+id/login_btn"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="150dp"
         android:background="@drawable/btn_background"
-        android:layout_below="@id/contact_input"
         android:layout_marginTop="35dp"
         />
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+    <View
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:background="#808080" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/option_tv"
-        android:text="Or, login with.."
-        android:layout_below="@id/login_btn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:text="@string/or"
         />
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="#808080" />
+    </LinearLayout>
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/option_tv"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sign_in_button"
         android:layout_marginTop="30dp"
-
-        android:layout_centerHorizontal="true"
         android:orientation="horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/text_tv"
-        android:text="New to SamVach? "
+        android:text="@string/new_to_samvach"
 
         />
 
@@ -101,11 +105,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/register_tv"
-        android:text="Register"
+        android:text="@string/register"
         android:clickable="true"
+        android:layout_marginStart="5dp"
         android:textColor="@color/blue"
         android:textStyle="bold"
         android:focusable="true" />
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
