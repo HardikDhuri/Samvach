@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chat.ChatsActivity">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navy"
+            android:id="@+id/chat_toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/chat_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/default_user"
+                    app:border_color="#78D57B"
+                    app:border_width="1sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name"
+                    android:textColor="@color/light"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/msg_editor_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/msg_edt"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:hint="Enter Message"
+            android:inputType="text"
+
+            android:maxLines="6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/send_btn"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity=""
+            app:icon="@drawable/send_icon"
+            app:iconGravity="textEnd"
+            app:iconSize="24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
