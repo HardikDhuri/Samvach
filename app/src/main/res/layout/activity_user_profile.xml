@@ -7,8 +7,6 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".chat.UserProfile">
-
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/userprofile_img"
         android:layout_width="90dp"
