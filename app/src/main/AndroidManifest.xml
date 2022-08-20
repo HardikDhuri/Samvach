@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Samvach"
         tools:targetApi="31">
         <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
             android:name=".password.PasswordActivity"
             android:exported="false" />
         <activity
