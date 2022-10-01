@@ -16,11 +16,21 @@
         android:theme="@style/Theme.Samvach"
         tools:targetApi="31">
         <activity
+            android:name=".Communitypost"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".password.Password"
+            android:exported="false" />
+        <activity
             android:name=".settings.SettingsActivity"
             android:exported="false" />
         <activity
             android:name=".main.MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".login.LoginActivity"
             android:exported="true">
