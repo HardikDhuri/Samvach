@@ -17,4 +17,11 @@
     <string name="register">Register</string>
     <string name="about_description">On vacation to Nepal</string>
     <string name="name_txt">Hardik Dhuri</string>
+    <string name="setup_profile_info_btn_text">Setup Profile</string>
+    <string name="helper_text_on_profile_info">Please set your name and profile picture</string>
+    <string name="profile_info_title">Setup Profile</string>
+    <string name="status_description">Only on Samvach</string>
+    <string name="profile_info_name_hint">Enter your Name</string>
+    <string name="row_name_ph">Hardik Dhuri</string>
+    <string name="last_text_ph">Hi, How you doing?</string>
 </resources>

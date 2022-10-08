@@ -5,11 +5,14 @@ package com.example.samvach.login
 
 import android.content.Intent
 import android.content.IntentSender
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
+import com.example.samvach.InitActivity
 import com.example.samvach.R
+import com.example.samvach.SetupProfileInfo
 import com.example.samvach.databinding.ActivityLoginBinding
 import com.example.samvach.main.MainActivity
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
@@ -34,7 +37,6 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private val loginViewModel: LoginViewModel by viewModels()
     private lateinit var auth: FirebaseAuth
-
     private lateinit var oneTapClient: SignInClient
     private lateinit var signInRequest: BeginSignInRequest
 
@@ -98,12 +100,13 @@ class LoginActivity : AppCompatActivity() {
                                     if (task.isSuccessful) {
                                         // Sign in success, update UI with the signed-in user's information
                                         val user = auth.currentUser
-                                        updateUI(user)
+                                        setupProfile()
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.w(TAG, "signInWithCredential:failure", task.exception)
                                         Snackbar.make(binding.root, "Failure Occured", Snackbar.LENGTH_SHORT).show()
                                         loginIntent()
+                                        finish()
                                     }
                                 }
 
@@ -138,26 +141,15 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-    override fun onStart() {
-        super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = auth.currentUser
-        updateUI(currentUser)
-    }
 
-    private fun updateUI(currentUser: FirebaseUser?) {
-        if (currentUser != null) {
-            mainIntent()
-        }
-    }
 
     private fun loginIntent() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 
-    private fun mainIntent() {
-        val intent = Intent(this, MainActivity::class.java)
+    private fun setupProfile() {
+        val intent = Intent(this, SetupProfileInfo::class.java)
         startActivity(intent)
     }
 

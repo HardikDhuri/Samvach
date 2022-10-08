@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/details"
+        android:title="Details"
+        android:contentDescription="Details of the User"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_hide_user"
+        android:title="Hide +"
+        android:contentDescription="Hide the User"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_verified_user"
+        android:title="Verified +"
+        android:contentDescription="Add to Verified Send"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/block_user"
+        android:title="Block"
+        android:contentDescription="Block the User"
+        app:showAsAction="never" />
+
+
+</menu>

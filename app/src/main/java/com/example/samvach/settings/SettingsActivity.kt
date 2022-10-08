@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import com.bumptech.glide.Glide
 import com.example.samvach.R
 import com.example.samvach.databinding.ActivitySettingsBinding
 import com.example.samvach.login.LoginActivity
@@ -23,6 +24,11 @@ class SettingsActivity : AppCompatActivity() {
         auth = Firebase.auth
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.settingsUserNameTv.text = auth.currentUser?.displayName
+        Glide.with(this)
+            .load(auth.currentUser!!.photoUrl)
+            .into(binding.settingsUserProfileIv)
 
         binding.logoutBtn.setOnClickListener {
             auth.signOut()

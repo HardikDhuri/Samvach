@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/user_profile_iv"
+            android:id="@+id/settings_user_profile_iv"
             android:layout_width="90sp"
             android:layout_height="90sp"
             android:clickable="true"
@@ -31,7 +31,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/userId_tv"
+                android:id="@+id/settings_user_name_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/name_txt"
@@ -40,7 +40,7 @@
                 android:layout_marginBottom="4dp"/>
 
             <TextView
-                android:id="@+id/about_tv"
+                android:id="@+id/settings_user_status_tv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:maxLines="2"

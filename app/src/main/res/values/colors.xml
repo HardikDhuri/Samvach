@@ -11,4 +11,5 @@
     <color name="blue">#1363DF</color>
     <color name="aqua">#47B5FF</color>
     <color name="light">#DFF6FF</color>
+    <color name="fainted">#82858E</color>
 </resources>
